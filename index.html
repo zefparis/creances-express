@@ -5,11 +5,14 @@
   <title>Relance Express – Recouvrez votre argent facilement</title>
   <meta name="description" content="L’appli simple pour relancer un paiement, même entre particuliers. Relances légales, paiement sécurisé, résultat immédiat.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Optionnel : Open Graph pour preview WhatsApp/Facebook -->
+
+  <!-- Open Graph pour Facebook/WhatsApp/LinkedIn preview -->
   <meta property="og:title" content="Relance Express – Recouvrez vos créances facilement">
   <meta property="og:description" content="Envoyez une relance de paiement, même entre particuliers. Application légale, simple, rapide, et sécurisée.">
-  <meta property="og:image" content="URL_DE_TON_IMAGE" />
-  <meta property="og:url" content="https://quick-sale-tracker-lecoinrdc.replit.app/" />
+  <meta property="og:image" content="https://creance-express.vercel.app/creance-preview.png" />
+  <meta property="og:url" content="https://creance-express.vercel.app/" />
+  <meta name="twitter:card" content="summary_large_image">
+
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -59,24 +62,32 @@
       font-size: 0.93em;
       margin-top: 18px;
     }
-    img {
+    .preview-image {
       margin-top: 20px;
-      max-width: 160px;
-      border-radius: 10px;
+      max-width: 320px;
+      border-radius: 14px;
       box-shadow: 0 2px 10px #0001;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 24px 4px;
+        padding: 18px 6px 18px 6px;
+      }
+      .preview-image {
+        max-width: 95vw;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Relance Express</h1>
+    <img src="https://creance-express.vercel.app/creance-preview.png" alt="Relance Express" class="preview-image">
     <p>
       <b>On vous doit de l’argent ?</b><br>
       Récupérez vos créances facilement, même entre particuliers !<br>
       Générez et envoyez une relance légale en 2 minutes, paiement sécurisé, résultat immédiat.
     </p>
-    <!-- Optionnel : Image ou illustration de relance -->
-    <!-- <img src="URL_DE_TON_IMAGE" alt="Relance Express"> -->
     <button class="cta-btn" onclick="window.open('https://quick-sale-tracker-lecoinrdc.replit.app/', '_blank')">
       Accéder à l’application
     </button>
